@@ -1,0 +1,21 @@
+.menuContainer {
+    display: inline-flex;
+    align-items: center;
+}
+
+.imgContainer {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer>img:hover {
+    cursor: pointer;
+}
+
+.topbarImg {
+    max-width: 18px;
+    max-height: 18px;
+}

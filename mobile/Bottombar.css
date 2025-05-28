@@ -1,0 +1,21 @@
+.bottomIconContainer {
+    height: 30px;
+    font-size: 8px;
+    color: #6FA5EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomIconContainer>img{
+    height: 16px;
+}
+
+.bottomIconContainer>div{
+    padding-top: 4px;
+    text-align: center;
+}
+
+.bottomIconContainer>img,.bottomIconContainer>div:hover{
+    cursor: pointer;
+}

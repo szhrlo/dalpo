@@ -1,0 +1,191 @@
+.react-calendar {
+    width: 350px;
+    max-width: 100%;
+    background: white;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  abbr {
+    text-decoration: none;
+  }
+  
+  .react-calendar,
+  .react-calendar *,
+  .react-calendar *:before,
+  .react-calendar *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .react-calendar button {
+    margin: 0;
+    border: 0;
+    outline: none;
+  }
+  
+  .react-calendar button:enabled:hover {
+    cursor: pointer;
+  }
+  
+  .react-calendar__navigation {
+    display: flex;
+    height: 32px;
+    margin-bottom: 4px;
+    background-color: #FCE4CC;
+  }
+  
+  .react-calendar__navigation button {
+    min-width: 44px;
+    background: none;
+    color: #44474B;
+  }
+  
+  .react-calendar__navigation button:disabled {
+    background-color: #FCE4CC;
+    color: #44474B;
+  }
+
+  .react-calendar__navigation__arrow {
+    color: #44474B;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: #FCE4CC;
+  }
+  
+  .react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font: inherit;
+    font-size: 10px;
+    display: grid !important;
+    grid-template-columns: repeat(7, 1fr); /* 요일 7개 */
+    gap: 4px; /* 버튼 사이 간격 */
+    height: 20px;
+    align-content: center;
+  }
+
+  .react-calendar__month-view__weekdays__weekday {
+    padding: 0;
+    background-color: #F2F2F2;
+  }
+  
+  /* 토요일 파란 폰트 */
+   .react-calendar__month-view__weekdays__weekday--weekend abbr[title="토요일"] {
+    color: #6FA5EB;
+   }
+
+   /* 토요일 날짜 스타일 */
+  .react-calendar__tile.custom-saturday:disabled {
+    color: #6FA5EB;
+   }
+
+   /* 일요일 빨간 폰트 */
+   .react-calendar__month-view__weekdays__weekday--weekend abbr[title="일요일"] {
+    color: #FF3939;
+  }
+
+   /* 일요일 날짜 스타일 */
+  .react-calendar__tile.custom-sunday:disabled {
+    color: #FF3939;
+  }
+  
+  .react-calendar__month-view__weekNumbers .react-calendar__tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: inherit;
+    font-size: 0.75em;
+    font-weight: bold;
+  }
+
+  .react-calendar__month-view__days {
+    margin-top: 4px;
+    display: grid !important;
+    grid-template-columns: repeat(7, 1fr); /* 요일 7개 */
+    gap: 4px; /* 버튼 사이 간격 */
+  }
+
+  .react-calendar__month-view__days button {
+    background-color: #F2F2F2;
+    font-size: 10px;
+    padding: 0;
+    height: 34px;
+    display: flex;
+  }
+
+  .react-calendar__month-view__days button abbr {
+    position: fixed;
+    padding-left: 4px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .react-calendar__month-view__days button img {
+    width: 10px;
+    height: 10px;
+    margin-left: 2px;
+  }
+
+  .react-calendar__month-view__days__day {
+    color: #44474B;
+  }
+  
+  
+  .react-calendar__month-view__days__day--neighboringMonth,
+  .react-calendar__month-view__days__day--neighboringMonth.custom-saturday:disabled,
+  .react-calendar__month-view__days__day--neighboringMonth.custom-sunday:disabled,
+  .react-calendar__decade-view__years__year--neighboringDecade,
+  .react-calendar__century-view__decades__decade--neighboringCentury {
+    color: #adadad;
+  }
+  
+  
+  .react-calendar__tile {
+    max-width: 100%;
+    padding: 10px 6.6667px;
+    background: none;
+    text-align: center;
+    font: inherit;
+    font-size: 0.833em;
+  }
+  
+  .react-calendar__tile:disabled {
+    background-color: #F2F2F2;
+    color: #44474B;
+  }
+  
+  .react-calendar__month-view__days__day--neighboringMonth:disabled,
+  .react-calendar__decade-view__years__year--neighboringDecade:disabled,
+  .react-calendar__century-view__decades__decade--neighboringCentury:disabled {
+    color: #adadad;
+  }
+  
+  /* .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background-color: #e6e6e6;
+  } */
+  
+  .react-calendar__tile--now:disabled {
+    background: #FCE4CC;
+  }
+  
+  .react-calendar__tile--now:enabled:hover,
+  .react-calendar__tile--now:enabled:focus {
+    background: #ffffa9;
+  }
+  
+  

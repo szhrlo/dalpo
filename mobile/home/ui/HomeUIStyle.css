@@ -1,0 +1,95 @@
+.categoryContainerBox {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoryContainer {
+    width: 80%;
+    margin: 0.8% 0;
+    height: fit-content;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.iconContainer {
+    height: 50px;
+    width: 42px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 8px;
+    color: #44474B;
+}
+
+.iconContainer>img,.iconContainer>div:hover {
+    cursor: pointer;
+}
+
+.iconImg {
+    height: 22px;
+}
+
+.iconText {
+    padding-top: 6px;
+    text-align: center;
+}
+
+.moreButton {
+    width: 96px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    font-size: 8px;
+    color: #44474B;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.moreButton:hover {
+    cursor: pointer;
+}
+
+.containerTitle {
+    margin: 0 4% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.containerTitle>span:hover {
+    cursor: pointer;
+}
+
+.popularBox {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popularImg {
+    padding: 0 6%;
+    background-color: #EDEDED;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+}
+.popularText {
+    margin-top: 4px;
+    font-size: 8px;
+    color: #44474B;
+    text-align: center;
+}
+
+.popularBox>div:hover {
+    cursor: pointer;
+}

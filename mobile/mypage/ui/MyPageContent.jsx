@@ -35,12 +35,15 @@ function MyPageContent(props) {
 
     const myRating = 60;
 
+    const level = ['초승달', '상현달', '보름달', '하현달', '그믐달'];
+    const myLevel = 1;
+
     return (
         <div style={{width: '100%'}}>
             <div style={styles.meContainer}>
                 <div style={styles.myRate}>
                     <div><strong>달래</strong> 님은</div>
-                    <div>상현달 상위 {myRating}% 입니다</div>
+                    <div>{level[myLevel]} 상위 {myRating}% 입니다</div>
                 </div>
                 <div style={styles.mySet}>
                     내 정보 관리 {'>'}
@@ -58,8 +61,8 @@ function MyPageContent(props) {
                     </div>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                    <img src="images/icon/rate_0.png" style={{height: '16px'}}></img>
-                    <img src="images/icon/rate_100.png" style={{height: '16px'}}></img>
+                    <img src="images/icon/rate_1.png" style={{height: '16px'}}></img>
+                    <img src="images/icon/rate_2.png" style={{height: '16px'}}></img>
                 </div>
                 <MyCalendar />
                 <MyRecord />

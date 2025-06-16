@@ -1,0 +1,35 @@
+body::-webkit-scrollbar {
+    display: none;  /* 스크롤바 숨기기 */
+}
+
+.wrapper {
+    width: -webkit-fill-available;
+    margin: 0 20px;
+    overflow-y: visible;
+}
+
+.title-container {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.img-container {
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.img-container > img {
+    width: 14px;
+    height: 10px;
+}
+
+.title-container > span {
+    font-size: 10px;
+    color: #44474B;
+    margin: 0 4px;
+}

@@ -1,0 +1,55 @@
+.contentContainerBox {
+    width: 100%;
+}
+
+.contentContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.content {
+    width: 30%;
+}
+
+.content-imgContainer {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+}
+
+.content-imgContainer > img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    margin-top: 4px;
+}
+
+.description > div {
+    margin: 1px 0;
+}
+
+.category-text {
+    width: fit-content;
+    color: #6FA5EB;
+    font-size: 6px;
+}
+
+.title-text {
+    width: fit-content;
+    color: #44474B;
+    font-size: 10px;
+}
+
+.period-text {
+    width: fit-content;
+    color: #44474B;
+    font-size: 6px;
+}
+
+.content-imgContainer > img, .title-text:hover {
+    cursor: pointer;
+}
